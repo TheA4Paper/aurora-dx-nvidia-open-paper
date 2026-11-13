@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: aurora-dx-nvidia-open-roc
+name: aurora-dx-nvidia-open-paper
 description: Custom Aurora DX Nvidia Open with Roc Toolkit and Yakuake drop-down terminal
 base-image: ghcr.io/ublue-os/aurora-dx-nvidia-open
 image-version: stable # Change to 'latest' if you prefer bleeding-edge tracking
