@@ -5,8 +5,9 @@ base-image: ghcr.io/ublue-os/aurora-dx-nvidia-open
 image-version: stable # Change to 'latest' if you prefer bleeding-edge tracking
 
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - yakuake
-      - pipewire-module-roc
-      - roc-toolkit
+      packages:
+        - yakuake
+        - pipewire-module-roc
+        - roc-toolkit
