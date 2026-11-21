@@ -7,11 +7,15 @@ image-version: stable # Change to 'latest' if you prefer bleeding-edge tracking
 modules:
   - type: signing
   - type: dnf
+    repos:
+      files:
+        - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
     install:
       packages:
         - yakuake
         - pipewire-module-roc
         - roc-toolkit
+        - cloudflare-warp
   - type: default-flatpaks
     configurations:
       - notify: true
@@ -30,7 +34,7 @@ modules:
           - com.heroicgameslauncher.hgl
           - net.lutris.Lutris
           - com.usebottles.bottles
-          - flathub com.vysp3r.ProtonPlus
+          - com.vysp3r.ProtonPlus
           - org.jdownloader.JDownloader
   - type: fonts
     fonts:
