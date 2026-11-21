@@ -28,6 +28,8 @@ modules:
           - org.qbittorrent.qBittorrent
           - org.onlyoffice.desktopeditors
           - com.heroicgameslauncher.hgl
+          - net.lutris.Lutris
+          - com.usebottles.bottles
   - type: fonts
     fonts:
       google-fonts:
